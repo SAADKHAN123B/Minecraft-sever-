@@ -1,4 +1,3 @@
-<!-- Final version - Save as index.html and host it -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,12 +13,18 @@
       padding: 0;
     }
     .login, .panel {
-      display: none;
       max-width: 400px;
       margin: 100px auto;
       padding: 30px;
       background: #1e1e1e;
       border-radius: 10px;
+    }
+    .login {
+      display: block; /* FIXED: show login first */
+    }
+    .panel {
+      display: none;
+      max-width: 100%;
     }
     .login input {
       width: 100%;
@@ -130,9 +135,6 @@
       🚫 Banned Players
       <div id="banList">No banned players.</div>
       🚫 Banned IPs
-    </div>
-    <div id="playerList">
-      <!-- Player heads removed, will be shown only if real data available -->
     </div>
   </div>
 </div>
